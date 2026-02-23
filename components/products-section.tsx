@@ -150,17 +150,7 @@ function ProductCard({
           </span>
         </div>
 
-        {/* Price */}
-        <div className="mt-3 flex items-center gap-2">
-          <span className="text-lg font-bold text-deep">
-            ${product.price.toFixed(2)}
-          </span>
-          {product.originalPrice && (
-            <span className="text-sm text-deep/40 line-through">
-              ${product.originalPrice.toFixed(2)}
-            </span>
-          )}
-        </div>
+
       </div>
     </div>
   )
