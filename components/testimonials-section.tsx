@@ -1,31 +1,32 @@
+import Image from "next/image"
 import { Star } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Sarah K.",
+    name: "Anna M.",
     role: "Yoga Instructor",
     quote:
-      "The AuraBreeze Diffuser completely transformed my evening routine. I fall asleep in minutes now.",
+      "The Serenity Mist Diffuser completely transformed my evening routine. I fall asleep in minutes now.",
     rating: 5,
-    avatar: "S",
+    image: "/images/avatar-anna.jpg",
     color: "bg-orchid/20 text-orchid",
   },
   {
-    name: "Marcus T.",
+    name: "Daniel P.",
     role: "Software Engineer",
     quote:
-      "I was skeptical, but the VitalPulse Massage Gun is legit. My recovery time after workouts has been cut in half.",
+      "I was skeptical, but the TheraPro Recovery Gun is legit. My recovery time after workouts has been cut in half.",
     rating: 5,
-    avatar: "M",
+    image: "/images/avatar-daniel.jpg",
     color: "bg-peach/20 text-peach",
   },
   {
-    name: "Emily R.",
+    name: "Lena V.",
     role: "Meditation Coach",
     quote:
-      "Wellsupporte curates the best wellness tools I have ever used. The MindFlow Journal is my daily companion.",
+      "Wellsupporte curates the best wellness tools I have ever used. The Inner Compass Journal is my daily companion.",
     rating: 5,
-    avatar: "E",
+    image: "/images/avatar-lena.jpg",
     color: "bg-teal/20 text-teal",
   },
 ]
@@ -76,11 +77,13 @@ export function TestimonialsSection() {
 
               {/* Author */}
               <div className="mt-6 flex items-center gap-3">
-                <div
-                  className={`flex h-10 w-10 items-center justify-center rounded-full text-sm font-bold ${t.color}`}
-                >
-                  {t.avatar}
-                </div>
+                <Image
+                  src={t.image}
+                  alt={t.name}
+                  width={40}
+                  height={40}
+                  className="h-10 w-10 rounded-full object-cover"
+                />
                 <div>
                   <p className="text-sm font-semibold text-deep">{t.name}</p>
                   <p className="text-xs text-deep/50">{t.role}</p>
