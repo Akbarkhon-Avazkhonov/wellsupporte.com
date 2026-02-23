@@ -146,7 +146,7 @@ function ProductCard({
             ))}
           </div>
           <span className="text-xs font-medium text-deep/60">
-            {product.rating} ({product.reviews.toLocaleString()})
+            {product.rating} ({new Intl.NumberFormat("en-US").format(product.reviews)})
           </span>
         </div>
 
