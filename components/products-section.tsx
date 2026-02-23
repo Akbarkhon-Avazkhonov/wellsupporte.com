@@ -6,7 +6,7 @@ import { useState } from "react"
 
 const products = [
   {
-    name: "AuraBreeze Diffuser",
+    name: "Serenity Mist Diffuser",
     category: "Calm",
     price: 79.99,
     originalPrice: 99.99,
@@ -18,7 +18,7 @@ const products = [
     eco: true,
   },
   {
-    name: "CloudNest Weighted Blanket",
+    name: "Haven Gravity Blanket",
     category: "Calm",
     price: 129.99,
     originalPrice: null,
@@ -30,7 +30,7 @@ const products = [
     eco: true,
   },
   {
-    name: "DreamShade Sleep Mask",
+    name: "Lunar Eclipse Sleep Mask",
     category: "Calm",
     price: 34.99,
     originalPrice: 44.99,
@@ -42,7 +42,7 @@ const products = [
     eco: false,
   },
   {
-    name: "MindFlow Journal",
+    name: "Inner Compass Journal",
     category: "Balance",
     price: 24.99,
     originalPrice: null,
@@ -54,7 +54,7 @@ const products = [
     eco: true,
   },
   {
-    name: "VitalPulse Massage Gun",
+    name: "TheraPro Recovery Gun",
     category: "Energy",
     price: 199.99,
     originalPrice: 249.99,
@@ -66,7 +66,7 @@ const products = [
     eco: false,
   },
   {
-    name: "ZenGround Yoga Mat",
+    name: "EarthFlow Yoga Mat",
     category: "Balance",
     price: 89.99,
     originalPrice: null,
