@@ -79,6 +79,7 @@ export function HeroSection() {
                 width={520}
                 height={600}
                 className="rounded-2xl object-cover"
+                style={{ width: "100%", height: "auto" }}
                 priority
               />
             </div>
